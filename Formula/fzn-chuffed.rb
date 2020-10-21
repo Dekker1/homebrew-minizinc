@@ -7,6 +7,13 @@ class FznChuffed < Formula
   license "MIT"
   head "https://github.com/chuffed/chuffed.git", branch: "develop"
 
+  bottle do
+    root_url "https://github.com/Dekker1/homebrew-minizinc/releases/download/fzn-chuffed-0.10.4"
+    cellar :any_skip_relocation
+    sha256 "4f6bbccc0d8fa21d11ebdc8a1b086b5e841581a959bb7ff582dd06a50035ea62" => :catalina
+    sha256 "245cffb3635623f1f3fc36e044d3cff214d51c64ff5309c7242aa8e0a96d10fc" => :x86_64_linux
+  end
+
   depends_on "cmake" => :build
 
   def install
