@@ -8,6 +8,13 @@ class FznJacop < Formula
   license "AGPL-3.0-or-later"
   head "https://github.com/radsz/jacop.git", branch: "develop"
 
+  bottle do
+    root_url "https://github.com/Dekker1/homebrew-minizinc/releases/download/fzn-jacop-4.7.0"
+    cellar :any_skip_relocation
+    sha256 "56684500ece0ad790092c71a304b4b9f5405de9221fa738bbe9eab95576281b3" => :catalina
+    sha256 "6443b898838fdf1d78fff3e4169ae2196be4c1b4c77d2c54885cbf8473b3f602" => :x86_64_linux
+  end
+
   depends_on "maven" => :build
   depends_on "openjdk"
 
