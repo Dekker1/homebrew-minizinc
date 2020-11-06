@@ -9,8 +9,9 @@ class FznChoco < Formula
   bottle do
     root_url "https://github.com/Dekker1/homebrew-minizinc/releases/download/fzn-choco-4.10.5"
     cellar :any_skip_relocation
-    sha256 "34343873ef95eeac94c99631e51da2bb9de1719979d8ed806ccbfedd5632cae6" => :catalina
-    sha256 "da559c6e93646b62ce17e09cba6a893bd878e8f5c495d404cba0403fc617f373" => :x86_64_linux
+    rebuild 1
+    sha256 "bc7689f42a783a33f0b4ca0acd105155e552f8357ce94080be96126ea55921e2" => :catalina
+    sha256 "73a10ceb243f2d748b40232ba1e40f74496657096c8ea66d7adf986f0e92ae82" => :x86_64_linux
   end
 
   depends_on "maven" => :build
