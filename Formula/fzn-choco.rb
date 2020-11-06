@@ -4,6 +4,7 @@ class FznChoco < Formula
   url "https://github.com/chocoteam/choco-solver/archive/4.10.5.tar.gz"
   sha256 "c0e28db042c6f8199778243bd9fd2f3f5b9392ef493d5028e3a170e8d4b68b8c"
   license "BSD-4-Clause"
+  head "https://github.com/chocoteam/choco-solver.git"
 
   bottle do
     root_url "https://github.com/Dekker1/homebrew-minizinc/releases/download/fzn-choco-4.10.5"
