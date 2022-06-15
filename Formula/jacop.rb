@@ -6,6 +6,12 @@ class Jacop < Formula
   license "AGPL-3.0-or-later"
   head "https://github.com/radsz/jacop.git", branch: "develop"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "004264b8ad08233371eee0ffbc61dbacbc110b8323d48cac028d8e4f9d544807"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0856a7d62c55df2b1dafe9c4d31d137cff81afb1158951818116a6cbfd6504e1"
+  end
+
   depends_on "maven" => :build
   depends_on "openjdk"
 
