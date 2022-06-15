@@ -8,6 +8,7 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 
 ## MiniZinc solvers included in this tap:
 
+- [Choco](https://choco-solver.org) - `brew install dekker1/minizinc/choco`
 - [Chuffed](https://github.com/chuffed/chuffed) - `brew install dekker1/minizinc/chuffed`
 - [JaCoP](https://github.com/radsz/jacop/) - `brew install dekker1/minizinc/jacop`
 
