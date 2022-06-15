@@ -6,6 +6,12 @@ class Chuffed < Formula
   license "MIT"
   head "https://github.com/chuffed/chuffed.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "b390bba3aebc3e89291fdd8ff2d64b513be27f789c02dd93cf680884c178b934"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "13d9317e356b582f5f4d5b50f048d7ddd8258129c52102e628e9f0928e6e34e2"
+  end
+
   depends_on "cmake" => :build
 
   def install
