@@ -8,12 +8,13 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 
 ## MiniZinc solvers included in this tap:
 
-- Chuffed - `brew install dekker1/minizinc/chuffed`
+- [Chuffed](https://github.com/chuffed/chuffed) - `brew install dekker1/minizinc/chuffed`
+- [JaCoP](https://github.com/radsz/jacop/) - `brew install dekker1/minizinc/jacop`
 
 ## MiniZinc solvers included in Homebrew core:
 
-- Gecode - `brew install gecode`
-- OR-Tools - `brew install or-tools`
+- [Gecode](https://www.gecode.org) - `brew install gecode`
+- [OR-Tools](https://developers.google.com/optimization/) - `brew install or-tools`
 
 ## Documentation
 
