@@ -1,4 +1,4 @@
-# Dekker1 Minizinc
+# A MiniZinc solver tap
 
 ## How do I install these formulae?
 
