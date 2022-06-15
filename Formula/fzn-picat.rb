@@ -7,6 +7,12 @@ class FznPicat < Formula
   license "MPL-2.0"
   head "https://github.com/nfzhou/fzn_picat.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "c7efd7779e0fec0bb8457536104daf1398fbd26ac6475e09e7e287a8aa10f666"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1ea8fcfc649cd7f2a5bccd3503270dc35b0d23a9be33997b8115b27117541082"
+  end
+
   depends_on "picat"
 
   def install
