@@ -6,6 +6,12 @@ class Choco < Formula
   license "BSD-4-Clause"
   head "https://github.com/chocoteam/choco-solver.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "9fe506002b13633840877281eceb2787fcc4503b5a7432b30fb1d8f676cd77c1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3dec42ac0be90ebc0a30e16080813938d6b4c4ea9a0ffa708871dfe24e6730ac"
+  end
+
   depends_on "maven" => :build
   depends_on "openjdk"
 
