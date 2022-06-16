@@ -5,6 +5,7 @@ class FznPicat < Formula
   version "3.0.2"
   sha256 "aac52c4853572999be199d2571405b389ea6d1317bc37983d79c597fce6b389e"
   license "MPL-2.0"
+  revision 1
   head "https://github.com/nfzhou/fzn_picat.git", branch: "main"
 
   bottle do
@@ -31,7 +32,7 @@ class FznPicat < Formula
     end
 
     (share / "minizinc").mkpath
-    (share / "minizinc/picat").install "mznlib" => "picat"
+    (share / "minizinc").install "mznlib" => "picat"
 
     (share / "minizinc/solvers").mkpath
     (share / "minizinc/solvers").install "picat.msc.in" => "picat.msc"
