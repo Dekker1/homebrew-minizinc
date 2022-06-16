@@ -10,6 +10,7 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 
 - [Choco](https://choco-solver.org) - `brew install dekker1/minizinc/choco`
 - [Chuffed](https://github.com/chuffed/chuffed) - `brew install dekker1/minizinc/chuffed`
+- [flatzingo](https://github.com/potassco/flatzingo) - `brew install dekker1/minizinc/flatzingo`
 - [FindMUS](https://gitlab.com/minizinc/FindMUS) - `brew install dekker1/minizinc/findmus`
 - [JaCoP](https://github.com/radsz/jacop/) - `brew install dekker1/minizinc/jacop`
 - [FZN Picat](https://github.com/nfzhou/fzn_picat) - `brew install dekker1/minizinc/fzn-picat`
