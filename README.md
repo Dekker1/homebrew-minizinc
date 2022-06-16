@@ -22,6 +22,8 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 
 ## Related tools included in this tap:
 
+- [Clingcon](https://potassco.org/) - `brew install dekker1/minizinc/clingcon`
+  - An answer set solver for constraint logic programs building upon the answer set solver Clingo.
 - [fzn2lp](https://github.com/potassco/fzn2lp) - `brew install dekker1/minizinc/fzn2lp`
   - A converter from FlatZinc into an ASP fact format.
 
