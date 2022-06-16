@@ -20,6 +20,11 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 - [Gecode](https://www.gecode.org) - `brew install gecode`
 - [OR-Tools](https://developers.google.com/optimization/) - `brew install or-tools`
 
+## Related tools included in this tap:
+
+- [fzn2lp](https://github.com/potassco/fzn2lp) - `brew install dekker1/minizinc/fzn2lp`
+  - A converter from FlatZinc into an ASP fact format.
+
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
