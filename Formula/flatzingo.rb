@@ -6,6 +6,12 @@ class Flatzingo < Formula
   sha256 "e43f007075cc5975e82e1256c48a957b2d57b0e1183ab7d6b9c79bf0c512982b"
   license "MIT"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "8732bfe5a1f8cb8ff603edb629d087ebaebd6d99c12f195f02bd6558a4576d5e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c7e56a8c706e7a28d55b6599bf7a8e0a3f016cb684dc4f6f18893d01ad37b656"
+  end
+
   depends_on "clingcon"
   depends_on "fzn2lp"
   depends_on "python"
