@@ -5,6 +5,12 @@ class Clingcon < Formula
   sha256 "c6bd979b94eebc531a191d957feb53e2e4b37858c71f3f5e04d73ab50db96f43"
   license "MIT"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any,                 big_sur:      "426ba07090edb9302a1852b1f71880ef7df9da658df1e8ed5ada9b483ce0565e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0ea3dd6800894816f2f074c90bba7fb159d49e78b6c7cd8328cf72bfd59c6474"
+  end
+
   depends_on "cmake" => :build
   depends_on "clingo"
 
