@@ -1,9 +1,9 @@
 class Findmus < Formula
   desc "Tool to find minimal unsatisfiable subsets of constraints in a MiniZinc instance"
   homepage "https://gitlab.com/minizinc/FindMUS"
-  url "https://gitlab.com/minizinc/FindMUS/-/archive/8abdc8039657ef6277be8b34c3e83ea77bedaa70/FindMUS-8abdc8039657ef6277be8b34c3e83ea77bedaa70.tar.gz"
+  url "https://gitlab.com/minizinc/FindMUS.git",
+    revision: "8abdc8039657ef6277be8b34c3e83ea77bedaa70"
   version "0.7.0"
-  sha256 "d9e4f164303e3b8cf9b78e06b019a691b797e229fdd2c8882a90239155ab1216"
   license "MPL-2.0"
   head "https://gitlab.com/minizinc/FindMUS.git", branch: "master"
 
@@ -17,10 +17,9 @@ class Findmus < Formula
   depends_on "minizinc"
 
   def install
-    mkdir "build" do
-      system "cmake", "..", *std_cmake_args
-      system "cmake", "--build", ".", "--target", "install"
-    end
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "--build", "build"
+    system "cmake", "--install", "build"
   end
 
   test do
