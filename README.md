@@ -15,6 +15,7 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 - [JaCoP](https://github.com/radsz/jacop/) - `brew install dekker1/minizinc/jacop`
 - [FZN Picat](https://github.com/nfzhou/fzn_picat) - `brew install dekker1/minizinc/fzn-picat`
   - Note: this tap contains only the FlatZinc interface to [Picat](http://picat-lang.org), it depends on the Picat package in Hombebrew core.
+- [Yuck](https://github.com/informarte/yuck/) - `brew install dekker1/minizinc/yuck`
 
 ## MiniZinc solvers included in Homebrew core:
 
