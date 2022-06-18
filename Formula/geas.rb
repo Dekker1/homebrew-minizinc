@@ -6,6 +6,12 @@ class Geas < Formula
   version "2022-05-16"
   head "https://bitbucket.org/gkgange/geas.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, big_sur:      "7aa727dc51f1bb83a60264a4726e9a078787967fcc1b4b55adc19e03332d0559"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "64b073a90fd95732dcf4c5519369da1b69fa218a36370782dec4115968907fa0"
+  end
+
   depends_on "opam" => :build
 
   def install
