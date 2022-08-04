@@ -28,7 +28,7 @@ class FznPicat < Formula
     inreplace "picat.msc.in" do |s|
       s.gsub!(/"executable":\s+"[^"]*"/, "\"executable\": \"#{bin}/fzn-picat\"")
       s.gsub!(/"mznlib":\s+"[^"]*"/, "\"mznlib\": \"#{share}/minizinc/picat\"")
-      s.gsub!(/"version":\s+"[^"]*"/, "\"executable\": \"#{version}")
+      s.gsub!(/"version":\s+"[^"]*"/, "\"version\": \"#{version}\"")
     end
 
     (share / "minizinc").mkpath
