@@ -2,8 +2,8 @@ class Geas < Formula
   desc "Lazy clause generation FlatZinc solver"
   homepage "https://bitbucket.org/gkgange/geas/"
   url "https://bitbucket.org/gkgange/geas.git",
-    revision: "d409105631b24663f84a95273dfcdc065c104de0"
-  version "2022-05-16"
+    revision: "d998974e71817828563f3aeec85b4ee810b3c243"
+  version "2022-07-03"
   head "https://bitbucket.org/gkgange/geas.git", branch: "master"
 
   bottle do
