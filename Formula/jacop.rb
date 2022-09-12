@@ -8,8 +8,8 @@ class Jacop < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, big_sur:      "004264b8ad08233371eee0ffbc61dbacbc110b8323d48cac028d8e4f9d544807"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0856a7d62c55df2b1dafe9c4d31d137cff81afb1158951818116a6cbfd6504e1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "8e9ce1e8875d283162bc770c748affaf3a5851752735a842903303626f2048e7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6ae7027e9a2abde71c1e297df40882c7738138a2765c5cf1984fe2a13e3a3104"
   end
 
   depends_on "maven" => :build
