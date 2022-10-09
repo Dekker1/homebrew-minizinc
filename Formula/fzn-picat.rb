@@ -2,7 +2,7 @@ class FznPicat < Formula
   desc "FlatZinc solver based on the Picat Language SAT Engine"
   homepage "http://picat-lang.org"
   url "https://github.com/nfzhou/fzn_picat/archive/8d18e1f5b06c9e52c227f7adf91fa9728c83faeb.tar.gz"
-  version "3.3.0"
+  version "3.3.3"
   sha256 "8d74006bce80c6caeb302c96270346b4c130d966ac1f5876f95846f8a3b3aa2b"
   license "MPL-2.0"
   head "https://github.com/nfzhou/fzn_picat.git", branch: "main"
