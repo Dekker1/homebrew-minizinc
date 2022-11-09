@@ -1,9 +1,8 @@
 class Yuck < Formula
   desc "Local-search constraint solver with FlatZinc interface"
   homepage "https://github.com/informarte/yuck"
-  url "https://github.com/informarte/yuck.git",
-     tag:      "20210501",
-     revision: "8eee363cf51aa545e42fa1d73de0d7358115479c"
+  url "https://github.com/informarte/yuck/releases/download/20221101/yuck-20221101.zip"
+  sha256 "2195b8b4280f81326c7a9710f2ac1f6a3be7176c9235d12ec0e813a43a2655da"
   license "MPL-2.0"
   head "https://github.com/informarte/yuck.git", branch: "master"
 
@@ -13,14 +12,15 @@ class Yuck < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "b6c25b1076efafe891de7f861b394b29fa4916b5bc92bd00a3d876f0d5232d7d"
   end
 
-  depends_on "mill" => :build
+  # FIXME: Building does not succeed in the formula <== depends_on "mill" => :build
   depends_on "coreutils" # realpath in script
   depends_on "openjdk"
 
   def install
-    system "mill", "yuck.universalPackage"
+    # system "mill", "yuck.universalPackage"
 
-    out_loc = buildpath / Dir.glob("out/yuck/corePackage.dest/yuck-*")[0]
+    # out_loc = buildpath / Dir.glob("out/yuck/corePackage.dest/yuck-*")[0]
+    out_loc = buildpath
 
     inreplace (out_loc / "bin/yuck") do |s|
       s.gsub!("APP_HOME\/lib", "APP_HOME\/libexec")
@@ -32,13 +32,13 @@ class Yuck < Formula
     (share / "minizinc").mkpath
     (share / "minizinc").install (out_loc / "mzn/lib") => "yuck"
 
-    inreplace "resources/mzn/yuck.msc.in" do |s|
+    inreplace "mzn/yuck.msc" do |s|
       s.gsub!(/"executable":\s+"[^"]*"/, "\"executable\": \"#{bin}/yuck\"")
       s.gsub!(/"mznlib":\s+"[^"]*"/, "\"mznlib\": \"#{share}/minizinc/yuck\"")
       s.gsub!(/"version":\s+"[^"]*"/, "\"version\": \"#{version}\"")
     end
     (share / "minizinc/solvers").mkpath
-    (share / "minizinc/solvers").install "resources/mzn/yuck.msc.in" => "yuck.msc"
+    (share / "minizinc/solvers").install "mzn/yuck.msc"
   end
 
   test do
