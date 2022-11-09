@@ -8,8 +8,8 @@ class Yuck < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, big_sur:      "1d0c0dd1f8725acea2d75748cdb2c9de41bce325814be5914e863ff4c73f2aa8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b6c25b1076efafe891de7f861b394b29fa4916b5bc92bd00a3d876f0d5232d7d"
+    sha256 cellar: :any_skip_relocation, big_sur:      "958eb0770e054c888281a4b4618e3dfbd48dfb94a800ea530ca122859c4a5bf2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a73efafac2b2ab3cf0ad3bd0274f147ccfee3f0e568ef14bd6411336db8b1378"
   end
 
   # FIXME: Building does not succeed in the formula <== depends_on "mill" => :build
