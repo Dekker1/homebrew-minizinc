@@ -14,6 +14,7 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 - [FindMUS](https://gitlab.com/minizinc/FindMUS) - `brew install dekker1/minizinc/findmus`
 - [Geas](https://bitbucket.org/gkgange/geas) - `brew install dekker1/minizinc/geas`
 - [JaCoP](https://github.com/radsz/jacop/) - `brew install dekker1/minizinc/jacop`
+- [fzn-oscar-cbls](https://bitbucket.org/oscarlib/oscar/) - `brew install dekker1/minizinc/fzn-oscar-cbls`
 - [FZN Picat](https://github.com/nfzhou/fzn_picat) - `brew install dekker1/minizinc/fzn-picat`
   - Note: this tap contains only the FlatZinc interface to [Picat](http://picat-lang.org), it depends on the Picat package in Hombebrew core.
 - [Yuck](https://github.com/informarte/yuck/) - `brew install dekker1/minizinc/yuck`
