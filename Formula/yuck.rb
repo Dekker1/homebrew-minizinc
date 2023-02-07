@@ -24,7 +24,7 @@ class Yuck < Formula
     out_loc = buildpath / Dir.glob("out/yuck/dev/corePackage.dest/yuck-*")[0]
 
     inreplace (out_loc / "bin/yuck") do |s|
-      s.gsub!("APP_HOME\/lib", "APP_HOME\/libexec")
+      s.gsub!("APP_HOME/lib", "APP_HOME/libexec")
     end
     bin.install (out_loc / "bin/yuck")
 
