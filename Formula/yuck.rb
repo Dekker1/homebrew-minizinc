@@ -9,9 +9,9 @@ class Yuck < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, monterey:     "3d62a87562cfbf006e92b5606060d59c462d78bc7b7549122c5f1f581fcef71f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "25ae6aa421e3addcb9da7c517cec1b72ecc683c450462bd82a9e6edae2424ad5"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, monterey:     "44a3e25cca6ae8edb4db13e052cdb909a030b90a7c833f16914043ffa9ea74bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f04ea499128e0d6caa5e8e2575c16d14fd88fabe1e14dd1a0fd62df3cac6f27f"
   end
 
   depends_on "mill" => :build
