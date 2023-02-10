@@ -6,6 +6,12 @@ class Papilo < Formula
   license "LGPL-3.0-or-later"
   head "https://github.com/scipopt/papilo.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any,                 monterey:     "a232570421a87a52e1600e7fdc9f5050f19acf131fd23ad2436d2d62823ce352"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5d7940a66197cee2c61fbbbe64401f20b4063b1b7bea647e0088abb4df241c2b"
+  end
+
   depends_on "cmake" => :build
 
   depends_on "boost"
