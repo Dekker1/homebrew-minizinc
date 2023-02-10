@@ -7,6 +7,12 @@ class Scip < Formula
   license "Apache-2.0"
   head "https://github.com/scipopt/scip.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any,                 monterey:     "e53bf9766674a1b3869a52fb6065c000d4ea651d555dc5d4a61bf6b54959df8b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e32946396fcc53f2b072a453a7ff39003148dd99bc3fb4ddc18d1f1aa08a53e7"
+  end
+
   depends_on "cmake" => :build
 
   depends_on "gcc"
