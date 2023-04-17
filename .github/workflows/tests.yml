@@ -35,6 +35,8 @@ jobs:
 
       - run: brew test-bot --only-formulae --root-url=https://ghcr.io/v2/dekker1/minizinc
         if: github.event_name == 'pull_request'
+        env:
+          HOMEBREW_NO_INSTALL_FROM_API: 1
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
