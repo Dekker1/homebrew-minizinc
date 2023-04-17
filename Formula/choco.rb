@@ -8,8 +8,8 @@ class Choco < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, monterey:     "33f157315236aa41753a8e9caf71863e960d79ed5bf44f90de9b8dd4b494c885"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "49a16979fca6e939b68a45c5f4b94c159e2927b99ce08ae6ded6764cfc611683"
+    sha256 cellar: :any_skip_relocation, monterey:     "c43d2839767b38dfaf6fb74fa827b0bedefd8d630d77a58fd4f9f47d6b1588c4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "81142ef762358534700c15a9e30649c02916756f87eb8ab0d813a60bf67879e9"
   end
 
   depends_on "maven" => :build
