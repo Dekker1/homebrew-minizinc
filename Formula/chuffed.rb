@@ -8,8 +8,8 @@ class Chuffed < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, monterey:     "4871b4a36dd7a2419845a991d462c74e33b855bfec29eda152c21aa066e9e5a5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "777dcd5f024196405b54301bb7430898d6f243f1f9abcccc4e756e6323542738"
+    sha256 cellar: :any_skip_relocation, monterey:     "3d590f67ff602ac7f27ecbab5715cc9da0c959c2d464d7cfa40ca08e6a38d3ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "63c76fa289ccfc89e0c19abc288be429cb821a42084c54732b801bef07408761"
   end
 
   depends_on "cmake" => :build
