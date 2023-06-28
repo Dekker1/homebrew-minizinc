@@ -14,12 +14,11 @@ class Yuck < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f04ea499128e0d6caa5e8e2575c16d14fd88fabe1e14dd1a0fd62df3cac6f27f"
   end
 
-  depends_on "mill" => :build
   depends_on "coreutils" # realpath in script
   depends_on "openjdk"
 
   def install
-    system "mill", "yuck.dev.universalPackage"
+    system "./mill", "yuck.dev.universalPackage"
 
     out_loc = buildpath / Dir.glob("out/yuck/dev/corePackage.dest/yuck-*")[0]
 
