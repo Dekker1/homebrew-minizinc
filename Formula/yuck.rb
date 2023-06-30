@@ -17,7 +17,7 @@ class Yuck < Formula
   depends_on "openjdk"
 
   def install
-    system "./mill", "yuck.dev.universalPackage"
+    system "./mill", "yuck.dev.corePackage"
 
     out_loc = buildpath / Dir.glob("out/yuck/dev/corePackage.dest/yuck-*")[0]
 
