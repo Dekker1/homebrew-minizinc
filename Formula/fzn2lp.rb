@@ -4,6 +4,7 @@ class Fzn2lp < Formula
   url "https://github.com/potassco/fzn2lp/archive/refs/tags/v0.1.4.tar.gz"
   sha256 "00358ce7518ce939dcc3b1ee6e981e97000d4f941f4539a18a1d6e9dba52567d"
   license "MIT"
+  revision 1
   head "https://github.com/potassco/fzn2lp.git", branch: "master"
 
   bottle do
