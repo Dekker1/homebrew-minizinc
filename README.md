@@ -17,13 +17,13 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
 - [fzn-oscar-cbls](https://bitbucket.org/oscarlib/oscar/) - `brew install dekker1/minizinc/fzn-oscar-cbls`
 - [FZN Picat](https://github.com/nfzhou/fzn_picat) - `brew install dekker1/minizinc/fzn-picat`
   - Note: this tap contains only the FlatZinc interface to [Picat](http://picat-lang.org), it depends on the Picat package in Hombebrew core.
-- [SCIP](https://www.scipopt.org) - `brew install dekker1/minizinc/scip`
 - [Yuck](https://github.com/informarte/yuck/) - `brew install dekker1/minizinc/yuck`
 
 ## MiniZinc solvers included in Homebrew core:
 
 - [Gecode](https://www.gecode.org) - `brew install gecode`
 - [OR-Tools](https://developers.google.com/optimization/) - `brew install or-tools`
+- [SCIP](https://www.scipopt.org) - `brew install dekker1/minizinc/scip`
 
 ## Related tools included in this tap:
 
@@ -31,8 +31,6 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
   - An answer set solver for constraint logic programs building upon the answer set solver Clingo.
 - [fzn2lp](https://github.com/potassco/fzn2lp) - `brew install dekker1/minizinc/fzn2lp`
   - A converter from FlatZinc into an ASP fact format.
-- [PaPILO](https://github.com/scipopt/papilo) - `brew install dekker1/minizinc/papilo`
-  - Parallel presolve routines for (mixed integer) linear programming problems.
 
 ## Documentation
 
