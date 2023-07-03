@@ -19,6 +19,11 @@ Or `brew tap dekker1/minizinc` and then `brew install <formula>`.
   - Note: this tap contains only the FlatZinc interface to [Picat](http://picat-lang.org), it depends on the Picat package in Hombebrew core.
 - [Yuck](https://github.com/informarte/yuck/) - `brew install dekker1/minizinc/yuck`
 
+
+## MiniZinc SAT solvers included in this tap (solver interface not yet released):
+
+- [OpenWBO](https://github.com/sat-group/open-wbo) - `brew install dekker1/minizinc/open-wbo`
+
 ## MiniZinc solvers included in Homebrew core:
 
 - [Gecode](https://www.gecode.org) - `brew install gecode`
