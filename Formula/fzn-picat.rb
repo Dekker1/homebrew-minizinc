@@ -9,8 +9,8 @@ class FznPicat < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, monterey:     "d9ee715c28af36986b5623f818d0451bc468ab83137b5b663b650566105c421b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2e826a5780d78d28d792bd9bf54dd3c9a3883b886dc3dad24e5acaa983db3bef"
+    sha256 cellar: :any_skip_relocation, ventura:      "eea89087e920500e66a19e7fde2e7dc32edf24252d34a01c175a33a927866a79"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3d2f808e665f1fd46f22756bc50bc61e2f9dd8be9e69777a89930f02d767ee91"
   end
 
   depends_on "picat"
