@@ -1,8 +1,8 @@
 class Chuffed < Formula
   desc "Lazy clause generation FlatZinc solver"
   homepage "https://github.com/chuffed/chuffed"
-  url "https://github.com/chuffed/chuffed/archive/refs/tags/0.12.1.tar.gz"
-  sha256 "f84a4b5efe176b95c2cf9c58e00a57b0f4c2674b90640e263c07c9de29372ece"
+  url "https://github.com/chuffed/chuffed/archive/refs/tags/0.13.0.tar.gz"
+  sha256 "c6a1bff9d12098a6cd996fadb1797b0a23cc1750dcb7d65e8bf767827c363414"
   license "MIT"
   head "https://github.com/chuffed/chuffed.git", branch: "master"
 
