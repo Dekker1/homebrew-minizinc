@@ -25,8 +25,8 @@ class Choco < Formula
       (share / "minizinc").install "src/main/minizinc/mzn_lib" => "choco"
 
       inreplace "src/main/minizinc/choco.msc" do |s|
-        s.gsub!(/"executable":\s+"[^"]*"/, "\"executable\": \"#{bin}/fzn-choco\"")
-        s.gsub!(/"mznlib":\s+"[^"]*"/, "\"mznlib\": \"#{share}/minizinc/choco\"")
+        s.gsub!(/"executable"\s*:\s*"[^"]*"/, "\"executable\": \"#{bin}/fzn-choco\"")
+        s.gsub!(/"mznlib"\s*:\s*"[^"]*"/, "\"mznlib\": \"#{share}/minizinc/choco\"")
       end
       (share / "minizinc/solvers").mkpath
       (share / "minizinc/solvers").install "src/main/minizinc/choco.msc"
