@@ -1,8 +1,8 @@
 class Jacop < Formula
   desc "FlatZinc interface for the JaCoP constraint programming solver"
   homepage "https://github.com/radsz/jacop"
-  url "https://github.com/radsz/jacop/archive/refs/tags/4.9.0.tar.gz"
-  sha256 "5ae2d0c9929f4c0e626ba664fff8df5f373c5fffdc0b55f551ab4aff21d6d5d3"
+  url "https://github.com/radsz/jacop/archive/refs/tags/4.10.0.tar.gz"
+  sha256 "0983aae9f20ea2cdc747046bb079cf60ff697203ffa657b0d20d633d0b220270"
   license "AGPL-3.0-or-later"
   head "https://github.com/radsz/jacop.git", branch: "develop"
 
