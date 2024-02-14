@@ -2,8 +2,8 @@ class Yuck < Formula
   desc "Local-search constraint solver with FlatZinc interface"
   homepage "https://github.com/informarte/yuck"
   url "https://github.com/informarte/yuck.git",
-     tag:      "20230623",
-     revision: "7b41e0b7cc80754f275bbbfb2c41ea3cb6a73581"
+     tag:      "20240207",
+     revision: "555e489a9437b5cc3f440cdfaa36815117d48cf8"
   license "MPL-2.0"
   head "https://github.com/informarte/yuck.git", branch: "master"
 
