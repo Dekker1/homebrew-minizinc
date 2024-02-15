@@ -1,8 +1,8 @@
 class Clingcon < Formula
   desc "Answer set solver for constraint logic programs built upon clingo"
   homepage "https://potassco.org/"
-  url "https://github.com/potassco/clingcon/archive/refs/tags/v5.2.0.tar.gz"
-  sha256 "4b568475066e34be34110f481f7028b466c2b008e9ba41686e24ecbb468a40f2"
+  url "https://github.com/potassco/clingcon/archive/refs/tags/v5.2.1.tar.gz"
+  sha256 "ff17294757f3f3f2420acd2145fe9cb039b9aaeace428f546fee3896b00ef724"
   license "MIT"
 
   bottle do
