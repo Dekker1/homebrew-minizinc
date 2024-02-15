@@ -14,7 +14,7 @@ class Flatzingo < Formula
 
   depends_on "clingcon"
   depends_on "fzn2lp"
-  depends_on "python"
+  depends_on "python@3.11"
 
   def install
     libexec.install "fzn-flatzingo.sh", "fzn-flatzingo.py", "encodings"
