@@ -12,10 +12,19 @@ class Clingcon < Formula
   end
 
   depends_on "cmake" => :build
+  depends_on "python@3.12" => :build
   depends_on "clingo"
 
+  def python
+    deps.map(&:to_formula)
+        .find { |f| f.name.match?(/^python@\d\.\d+$/) }
+        .opt_libexec/"bin/python"
+  end
+
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build",
+           "-DPYCLINGCON_INSTALL_DIR=#{prefix/Language::Python.site_packages(python)}/lib/python3.9/site-packages",
+           *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
