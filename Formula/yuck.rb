@@ -15,7 +15,7 @@ class Yuck < Formula
   end
 
   depends_on "coreutils" # realpath in script
-  depends_on "openjdk"
+  depends_on "openjdk@17"
 
   def install
     system "./mill", "yuck.dev.corePackage"
