@@ -1,10 +1,9 @@
 class Fzn2lp < Formula
   desc "Converter from FlatZinc into an ASP fact format"
   homepage "https://github.com/potassco/fzn2lp"
-  url "https://github.com/potassco/fzn2lp/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "00358ce7518ce939dcc3b1ee6e981e97000d4f941f4539a18a1d6e9dba52567d"
+  url "https://github.com/potassco/fzn2lp/archive/refs/tags/v0.1.6.tar.gz"
+  sha256 "bded501f3207e986501c42ceac466eb22ca5236350e19480958e0017b376f52d"
   license "MIT"
-  revision 1
   head "https://github.com/potassco/fzn2lp.git", branch: "master"
 
   bottle do
