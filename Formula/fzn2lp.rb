@@ -8,8 +8,9 @@ class Fzn2lp < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, ventura:      "6ea941b44ea76062ad3404d1ad17aaa09feeca8cdbf7c3b1601e33523d87ed92"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "582e839d88d428caf63d0ff6b43bf15b18a74a6cab8480143e30be91591a5084"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "cb2e7850b7236d99b6faa2eff9661e65ed3087044b7cfaf7c8d626d9b2ac9cb7"
+    sha256 cellar: :any_skip_relocation, ventura:      "9267efb06ffe50455bb607cb97bab2a6de2894b26338c7a5d291d3b37bbd94f2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f93d54aaf101a0c1bb18889c3d3e11b4eccea93d5a3d45a377867c6ff6e6bd53"
   end
 
   depends_on "rust" => :build
