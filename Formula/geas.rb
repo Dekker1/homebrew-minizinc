@@ -1,10 +1,10 @@
 class Geas < Formula
   desc "Lazy clause generation FlatZinc solver"
-  homepage "https://bitbucket.org/gkgange/geas/"
-  url "https://bitbucket.org/gkgange/geas.git",
-    revision: "d409105631b24663f84a95273dfcdc065c104de0"
-  version "2022-05-16"
-  head "https://bitbucket.org/gkgange/geas.git", branch: "master"
+  homepage "https://github.com/gkgange/geas/"
+  url "https://github.com/gkgange/geas.git",
+    revision: "50147419443ea90bcf679f9bdd459bbe0be772f7"
+  version "2023-09-06"
+  head "https://github.com/gkgange/geas.git", branch: "master"
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
@@ -22,7 +22,7 @@ class Geas < Formula
       ENV["OPAMROOT"] = opamroot
       ENV["OPAMYES"] = "1"
       ENV["OPAMVERBOSE"] = "1"
-      system "opam", "init", "--no-setup", "--disable-sandboxing"
+      system "opam", "init", "--no-setup", "--disable-sandboxing", "--compiler=4.14.2"
       # Tell opam not to try to install external dependencies
       system "opam", "option", "depext=false"
       modules = %w[
