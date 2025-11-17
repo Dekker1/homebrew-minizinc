@@ -1,8 +1,8 @@
 class Pumpkin < Formula
   desc "Lazy clause generation constraint solver written in Rust"
   homepage "https://github.com/ConSol-Lab/Pumpkin"
-  url "https://github.com/ConSol-Lab/Pumpkin/archive/refs/tags/pumpkin-solver-v0.1.4.tar.gz"
-  sha256 "7c4bb0ce85d456685b1339370d7dd04e3f3c16a989b93b16f66f0aa266fa5d9e"
+  url "https://github.com/ConSol-Lab/Pumpkin/archive/refs/tags/pumpkin-solver-v0.2.2.tar.gz"
+  sha256 "95c9069bc1ed503a09112aff530dd1bf0b19a24a2589b2738c158d0fa378b589"
   license "Apache-2.0"
 
   bottle do
