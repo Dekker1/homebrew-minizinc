@@ -2,8 +2,8 @@ class Yuck < Formula
   desc "Local-search constraint solver with FlatZinc interface"
   homepage "https://github.com/informarte/yuck"
   url "https://github.com/informarte/yuck.git",
-     tag:      "20240207",
-     revision: "555e489a9437b5cc3f440cdfaa36815117d48cf8"
+     tag:      "20251106",
+     revision: "ab639612a35bb6d4c2ca5438562547e57fd683df"
   license "MPL-2.0"
   head "https://github.com/informarte/yuck.git", branch: "master"
 
@@ -14,10 +14,10 @@ class Yuck < Formula
   end
 
   depends_on "coreutils" # realpath in script
-  depends_on "openjdk@17"
+  depends_on "openjdk@21"
 
   def install
-    system "./mill", "yuck.dev.corePackage"
+    system "./mill", "yuck.corePackage"
 
     out_loc = buildpath / Dir.glob("out/yuck/dev/corePackage.dest/yuck-*")[0]
 
