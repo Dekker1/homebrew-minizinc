@@ -3,8 +3,8 @@ class Choco < Formula
 
   desc "Open-Source Java library for Constraint Programming and FlatZinc solver"
   homepage "https://choco-solver.org"
-  url "https://github.com/chocoteam/choco-solver/archive/refs/tags/v5.0.0.tar.gz"
-  sha256 "0c99663fc51124907c05c6d72e4a039bfa55bdf920c16fa5a3649b3c0473e0ef"
+  url "https://github.com/chocoteam/choco-solver/archive/refs/tags/v6.0.0.tar.gz"
+  sha256 "0e2445eb4da7b5dfd221b51349aefa4f4b48f99adbb6a7950130367354d2c2ea"
   license "BSD-4-Clause"
   head "https://github.com/chocoteam/choco-solver.git", branch: "master"
 
