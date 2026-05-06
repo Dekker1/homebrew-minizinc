@@ -10,9 +10,8 @@ class Choco < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "fa6ba226297f4e1dfa6c02e0acb6da1ab06f8707e2a6518fcdfd0d4877b7e947"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "48a83b3a994dc7d4e9f48546de1cfedb9203c7d2dd0d4641e4b67bdc20ae6686"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "6e9ed95685238221783962e06c1192756d815547fd73b28e203a5f9cd9051728"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ae91ed78f713031064f37ca691f86b4b1909ffdfa7f7a45cdde2c30752799bff"
   end
 
   depends_on "maven" => :build
