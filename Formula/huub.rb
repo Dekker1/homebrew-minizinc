@@ -5,6 +5,12 @@ class Huub < Formula
   sha256 "789fc798e8b238c2e8e525c34fb414b4cb967818f3a817ea785f934294c398b2"
   license "MPL-2.0"
 
+  bottle do
+    root_url "https://ghcr.io/v2/dekker1/minizinc"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "eada5bfb820263d87843085d09e586cae793b6649d31b41431cbcfe38ef0076b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9c1183e3a4fda7a4623da2ca6211a22a31f07fabfbf5ea90676f3085a728408f"
+  end
+
   depends_on "rust" => :build
 
   def install
