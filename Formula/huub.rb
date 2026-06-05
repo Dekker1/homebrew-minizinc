@@ -1,8 +1,8 @@
 class Huub < Formula
   desc "CP+SAT solver framework built to be reliable, performant, and extensible"
   homepage "https://github.com/huub-solver/huub"
-  url "https://github.com/huub-solver/huub/archive/refs/tags/huub-v100.0.0.tar.gz"
-  sha256 "789fc798e8b238c2e8e525c34fb414b4cb967818f3a817ea785f934294c398b2"
+  url "https://github.com/huub-solver/huub/archive/refs/tags/huub-v100.1.0.tar.gz"
+  sha256 "028abbbf3361bb2ec0cfb51b0f5b7a266a1c9b6e8834dc2d30f595e496779f65"
   license "MPL-2.0"
 
   bottle do
