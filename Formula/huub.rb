@@ -7,8 +7,8 @@ class Huub < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "eada5bfb820263d87843085d09e586cae793b6649d31b41431cbcfe38ef0076b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9c1183e3a4fda7a4623da2ca6211a22a31f07fabfbf5ea90676f3085a728408f"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "12282c897277f8384aea98ccb81798fd100cc8bb2c46cc6a8391b47bcfa3c6b0"
+    sha256 cellar: :any,                 x86_64_linux: "690a19055ae1918bfc1346275da7b8adc9ad8e858994c74d7f4c750381f2e0a7"
   end
 
   depends_on "rust" => :build
