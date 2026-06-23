@@ -9,9 +9,8 @@ class Geas < Formula
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
     rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e64c83bd7fd6befe7f637ca72bc71e7b83525fcf47fdf50de83a2ccb60163d03"
-    sha256 cellar: :any_skip_relocation, ventura:      "abab9a4b7f089fe820406119fea356a184ed1e6c07a7ecd852f5183c9cd94256"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2bb70e0286b9190148f10806583f21835001cff885d77bb8a4ebe67337991d2f"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e791e6c88d796e9b159edca1385afcfca47a56f3fbb54a16168f351651e61565"
+    sha256 cellar: :any,                 x86_64_linux: "0636b73b5986b82df909a49ab5ccb7d2246b85cf98856163d204c59684adef3e"
   end
 
   depends_on "opam" => :build
