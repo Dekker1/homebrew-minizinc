@@ -9,7 +9,7 @@ class Findmus < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    rebuild 1
+    rebuild 2
     sha256 cellar: :any,                 big_sur:      "b7442e71744d1898257b807ea8e12b6920621eb5ca03907d223c17d2af20ca6b"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "fbaa7bf8431366dd02d339333327c004cd0ab401d6c4f68571787e0664a1fdea"
   end

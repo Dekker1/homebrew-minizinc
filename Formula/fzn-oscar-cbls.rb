@@ -8,6 +8,7 @@ class FznOscarCbls < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
+    rebuild 1
     sha256 cellar: :any_skip_relocation, big_sur:      "7861df5fdda7f1cff3ff833b8f06e6f20d991cb39db3e49e9e534d01af9fd00f"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "7456db85bd6fa321f7dc881aff8ff2836470fcad8897e0fb4dcca4d9f1b8871d"
   end

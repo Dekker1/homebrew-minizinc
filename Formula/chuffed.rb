@@ -8,6 +8,7 @@ class Chuffed < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
+    rebuild 1
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "6222a6b1cd0c2b0b0fe9531e22876a00720983ceb1e7a348737d8a7045835191"
     sha256 cellar: :any_skip_relocation, ventura:      "05155a13d9377e2a982925f978b1027847c53d847cb4c402ad194184074b4bef"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "17b228b49295cf9f5da4e32e30ca6c0cecbd96f59c5905845ceb03260cda264c"
