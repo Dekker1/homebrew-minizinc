@@ -19,6 +19,9 @@ class Geas < Formula
   def install
     inreplace "Makefile" do |s|
       s.gsub!("-march=native", "")
+      # - GCC 13+ no longer transitively includes <cstdint>, so force-include.
+      # - Clang 19+ rejects the bare `template` keyword; downgrade that diagnostic.
+      s.gsub!("--std=c++11", "--std=c++11 -include cstdint -Wno-missing-template-arg-list-after-template-kw")
     end
     Dir.mktmpdir("opamroot") do |opamroot|
       ENV["OPAMROOT"] = opamroot

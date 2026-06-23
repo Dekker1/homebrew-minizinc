@@ -2,7 +2,7 @@ class Findmus < Formula
   desc "Tool to find minimal unsatisfiable subsets of constraints in a MiniZinc instance"
   homepage "https://gitlab.com/minizinc/FindMUS"
   url "https://gitlab.com/minizinc/FindMUS.git",
-    revision: "8abdc8039657ef6277be8b34c3e83ea77bedaa70"
+    revision: "d986e4e114a11eddb7def41837f900e00845a800"
   version "0.7.0"
   license "MPL-2.0"
   head "https://gitlab.com/minizinc/FindMUS.git", branch: "master"
@@ -15,7 +15,15 @@ class Findmus < Formula
   end
 
   depends_on "cmake" => :build
+  # cbc, cgl, clp, coinutils, gecode and osi are minizinc dependencies that the
+  # findmus binary links against transitively.
+  depends_on "cbc"
+  depends_on "cgl"
+  depends_on "clp"
+  depends_on "coinutils"
+  depends_on "gecode"
   depends_on "minizinc"
+  depends_on "osi"
 
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args
