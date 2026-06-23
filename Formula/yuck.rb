@@ -9,8 +9,7 @@ class Yuck < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, ventura:      "36a6291454d6941a7728a3ea2b2a9d8b8af47789ff4871d381d5c2efd0f96094"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "661b1053fe053d9c4299f6a3b65d3d60a179ada6117a4baa967e0ac1e6dc0d8e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d516be080115106bf5ab3489553eecf8e617f08caab6aede670f43740b7652fd"
   end
 
   depends_on "coreutils" # realpath in script
