@@ -7,8 +7,8 @@ class Pumpkin < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "0de105b3eec3c990017892fc3212fde9dc4652b0f2566edff2bd88195971bb1b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d40eea72b1d088bd677ee1432b791ba9db2093da14210008b6f00214ef3ed955"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "94446ce851bcf6d0366f4702c6873296d8d0b31dfe84f65f2a321e03bcb7bc67"
+    sha256 cellar: :any,                 x86_64_linux: "45879b492adfdab54f91a58d7f4bf62b29cffad087a9d3ed5c5268870354e44b"
   end
 
   depends_on "rust" => :build
