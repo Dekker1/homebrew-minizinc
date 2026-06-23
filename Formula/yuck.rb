@@ -16,12 +16,18 @@ class Yuck < Formula
   depends_on "openjdk"
 
   def install
-    system "./mill", "yuck.corePackage"
+    ENV["JAVA_HOME"] = Language::Java.java_home
+    ENV["COURSIER_CACHE"] = "#{HOMEBREW_CACHE}/coursier/v1"
+    ENV["COURSIER_ARCHIVE_CACHE"] = "#{HOMEBREW_CACHE}/coursier/arc"
+    ENV["COURSIER_JVM_CACHE"] = "#{HOMEBREW_CACHE}/coursier/jvm"
+
+    system "./mill", "--no-daemon", "yuck.corePackage"
 
     out_loc = buildpath / Dir.glob("out/yuck/corePackage.dest/yuck-*")[0]
 
     inreplace (out_loc / "bin/yuck") do |s|
       s.gsub!("APP_HOME/lib", "APP_HOME/libexec")
+      s.gsub!("\njava ", "\n\"${JAVA_HOME:-#{Language::Java.java_home}}/bin/java\" ")
     end
     bin.install (out_loc / "bin/yuck")
 
