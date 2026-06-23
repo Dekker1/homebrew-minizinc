@@ -10,8 +10,8 @@ class OpenWbo < Formula
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
     rebuild 1
-    sha256 cellar: :any,                 monterey:     "9b4746d1f00bb5227e68b1d60f714f0543009571f923f47084a9f208238a03a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "812ed111a61cf4dbbeb70f6114bfb785846e97eb0d99aea18cc25cc2cf15e403"
+    sha256 cellar: :any, arm64_tahoe:  "2ec20caa47d7ad3ba6f3ca2bae34ca8b796f6204f07ae1d29bd1ff91e194479d"
+    sha256 cellar: :any, x86_64_linux: "7b4355b8759d7a8d0a9de79306ca2950f912845504d75994c3bb6534734ef0e3"
   end
 
   depends_on "gmp"
