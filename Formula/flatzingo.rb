@@ -9,8 +9,8 @@ class Flatzingo < Formula
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
     rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur:      "8732bfe5a1f8cb8ff603edb629d087ebaebd6d99c12f195f02bd6558a4576d5e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c7e56a8c706e7a28d55b6599bf7a8e0a3f016cb684dc4f6f18893d01ad37b656"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "1ae28e62b4e1d57bf89c77342e7310dedff7ebc6453635b632fad65977dffd4a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4cdde4cde81a38a50451992bca98ece2aa944670ef6581b10589bbe97fc1a340"
   end
 
   depends_on "clingcon"
