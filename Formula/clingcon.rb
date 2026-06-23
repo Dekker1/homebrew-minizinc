@@ -8,8 +8,8 @@ class Clingcon < Formula
   bottle do
     root_url "https://ghcr.io/v2/dekker1/minizinc"
     rebuild 1
-    sha256 cellar: :any,                 ventura:      "f16d1f5bfb4365d8c6cccdb0c348b488403cabe796199b707c29ad1ee8c46006"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2fb12a9e958f0c3f01d0f0176e2dceb89228e21650685c9464dd71e099591752"
+    sha256 cellar: :any, arm64_tahoe:  "4ac8a8f95f65a29707ae436fab8608176e3fd82d7d03a6e4e725992e16c3fcfe"
+    sha256 cellar: :any, x86_64_linux: "86fb257b2de9bcf8bddafb62e8e2db198e5f8500b936c9b3dd22895dd2f5cf7b"
   end
 
   depends_on "cmake" => :build
